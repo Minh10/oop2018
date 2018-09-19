@@ -35,5 +35,21 @@ public class StudentManagement {
 
     public static void main(String[] args) {
         // TODO:
+        Student s1 = new Student("Minh", "17020890", "17020890@vnu.edu.vn");
+        Student s2 = new Student("Liem", "17020891", "17020891@vnu.edu.vn");
+        Student s3 = new Student("Ngoc","17020892","17020892@vnu.edu.vn");
+        s1.setGroup("INT22041");
+        s2.setGroup("INT22041");
+        s3.setGroup("INT22042");
+        System.out.println(s1.getInfo());
+        student.add(s1);
+        student.add(s2);
+        student.add(s3);
+        studentsByGroup();
+        removeStudent("17020890");
+        for(int i = 0; i < student.size(); i++){
+            System.out.println(student.get(i).getInfo());
+        }
+        
     }
 }
