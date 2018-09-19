@@ -78,7 +78,7 @@ public class Student {
 
     String getInfo() {
         // TODO:
-        return "Name: " + name + "%n" + "id: " + id + "%n" + "Group: " + group + "%n" + "Email" + email ;
+       return "Name: " + getName() + " " + "id: " + getId() + " " + "Group: " + getGroup() + " " + "Email " + getEmail() ;
         //return null; // xóa dòng này sau khi cài đặt
     }
 }
